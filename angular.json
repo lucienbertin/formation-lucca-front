@@ -23,7 +23,8 @@
               "projects/chat/src/assets"
             ],
             "styles": [
-              "projects/chat/src/styles.scss"
+              "projects/chat/src/styles.scss",
+              "node_modules/@lucca-front/scss/dist/lucca-front.css"
             ],
             "scripts": []
           },

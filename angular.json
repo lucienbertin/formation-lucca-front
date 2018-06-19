@@ -23,6 +23,7 @@
               "projects/cc/src/assets"
             ],
             "styles": [
+              "node_modules/@lucca-front/scss/dist/lucca-front.css",
               "projects/cc/src/styles.scss"
             ],
             "scripts": []
@@ -72,7 +73,7 @@
             "tsConfig": "projects/cc/tsconfig.spec.json",
             "karmaConfig": "projects/cc/karma.conf.js",
             "styles": [
-              "projects/cc/src/styles.css"
+              "projects/cc/src/styles.scss"
             ],
             "scripts": [],
             "assets": [

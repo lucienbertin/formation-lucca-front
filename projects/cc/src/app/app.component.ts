@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { timer } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
 	selector: 'cc-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'app';
+	ready$ = timer(2000)
+	.pipe(map(i => !(i % 2)));
+
 }

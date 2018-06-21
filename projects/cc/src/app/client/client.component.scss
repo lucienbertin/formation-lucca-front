@@ -1,5 +1,7 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+
 :host {
-	// h3 {
-	// 	color: recuperer la couleur primary ici
-	// }
+	h3 {
+		color: _color("primary")
+	}
 }

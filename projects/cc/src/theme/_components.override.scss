@@ -1,0 +1,10 @@
+$navSide: (
+  "compact-palette": (
+		bg-color:  #333,
+		text: #fff,
+		selected-bg: _color("primary", "dark"),
+		selected-text: #fff
+	),
+);
+
+$theme: _set($theme, "components.navSide", $navSide);

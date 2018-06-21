@@ -1,0 +1,14 @@
+$palettes: (
+	"primary": (
+			"color": #FB7F89,
+			"text": #FFF,
+			"accent": #C354A4,
+			"transparent": rgba(#FB7F89, .3),
+			"dark": darken(#FB7F89, 5%),
+			"darker": darken(#FB7F89, 20%),
+			"light": lighten(#FB7F89, 5%),
+			"lighter": lighten(#FB7F89, 20%)
+	),
+);
+
+$theme: _set($theme, "palettes", $palettes);

@@ -1,47 +1,19 @@
 # Exercice
 
-le but maintenant est defaire quelques trucs assez basiques avec les sources scss
+le but est de bidouiller avec les mixins for the lulz
 
-## importer les sources plutot que la distrib
+## rajouter un laoder
 
-pour ca faut aller taper sur @lf/scss/src/main.scss et pas @lf/scss/dis/lucca-front.css
+j'ai rajoute dans app-component `ready$` qui est un Observable<boolean> qui emet `true` au bout de 2 secondes. fare en sorte que tant que c'est pas le cas, ca affiche un loader
 
-## overrider du theme
+cf. la mixin loading
 
-reussir a mettre la couleur de cc comme palette principale
+cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.3/moqup.png)
 
-opur reference c'est ca les couleurs
 
-```scss
-	"primary": (
-			"color": #FB7F89,
-			"text": #FFF,
-			"accent": #C354A4,
-			"transparent": rgba(#FB7F89, .3),
-			"dark": darken(#FB7F89, 5%),
-			"darker": darken(#FB7F89, 20%),
-			"light": lighten(#FB7F89, 5%),
-			"lighter": lighten(#FB7F89, 20%)
-	),
-```
+## ne pas etre responsive
 
-pro-tip : va falloir bidouiller avec les includePaths
-
-apres ca faudrait overrider la nav 
-
-## recuperation d'une variable de theme dans un style encapsule
-
-dans client.component.scss, y'a ce code commente
-
-```scss
-:host {
-	// h3 {
-	// 	color: recuperer la couleur primary ici
-	// }
-}
-```
-
-faut le faire marcher
+pour pas avoir a gerer le responsive, juste afficher un callout 
 
 # comment que je fais les choses ?
 
@@ -51,4 +23,4 @@ faut le faire marcher
 
 les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
 la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
-la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.2/moqup.png)
+la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.3/moqup.png)

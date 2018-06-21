@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ActionModule } from './action/action.module';
+import { ClientModule } from './client/client.module';
 
 @NgModule({
 	declarations: [
@@ -11,6 +12,7 @@ import { ActionModule } from './action/action.module';
 	imports: [
 		BrowserModule,
 		ActionModule,
+		ClientModule,
 	],
 	bootstrap: [
 		AppComponent,

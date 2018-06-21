@@ -19,5 +19,8 @@ yarn start
 
 apres faut ecrire du code
 
-la demo est ici
-https://luccasa.github.io/lucca-front/
+# resources
+
+les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
+la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
+la maquette est [ici]()

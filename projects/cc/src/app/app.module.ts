@@ -6,6 +6,7 @@ import { ActionModule } from './action/action.module';
 import { ClientModule } from './client/client.module';
 import { ConnectModule } from './connect/connect.module';
 import { DetailModule } from './detail/detail.module';
+import { HistoryModule } from './history/history.module';
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { DetailModule } from './detail/detail.module';
 		ClientModule,
 		ConnectModule,
 		DetailModule,
+		HistoryModule,
 	],
 	bootstrap: [
 		AppComponent,

@@ -3,9 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "chat": {
-      "root": "projects/chat/",
-      "sourceRoot": "projects/chat/src",
+    "cc": {
+      "root": "projects/cc/",
+      "sourceRoot": "projects/cc/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {},
@@ -13,17 +13,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/chat",
-            "index": "projects/chat/src/index.html",
-            "main": "projects/chat/src/main.ts",
-            "polyfills": "projects/chat/src/polyfills.ts",
-            "tsConfig": "projects/chat/tsconfig.app.json",
+            "outputPath": "dist/cc",
+            "index": "projects/cc/src/index.html",
+            "main": "projects/cc/src/main.ts",
+            "polyfills": "projects/cc/src/polyfills.ts",
+            "tsConfig": "projects/cc/tsconfig.app.json",
             "assets": [
-              "projects/chat/src/favicon.ico",
-              "projects/chat/src/assets"
+              "projects/cc/src/favicon.ico",
+              "projects/cc/src/assets"
             ],
             "styles": [
-              "projects/chat/src/styles.scss"
+              "node_modules/@lucca-front/scss/dist/lucca-front.css",
+              "projects/cc/src/styles.scss"
             ],
             "scripts": []
           },
@@ -31,8 +32,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/chat/src/environments/environment.ts",
-                  "with": "projects/chat/src/environments/environment.prod.ts"
+                  "replace": "projects/cc/src/environments/environment.ts",
+                  "with": "projects/cc/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -50,34 +51,34 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "chat:build"
+            "browserTarget": "cc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "chat:build:production"
+              "browserTarget": "cc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "chat:build"
+            "browserTarget": "cc:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/chat/src/test.ts",
-            "polyfills": "projects/chat/src/polyfills.ts",
-            "tsConfig": "projects/chat/tsconfig.spec.json",
-            "karmaConfig": "projects/chat/karma.conf.js",
+            "main": "projects/cc/src/test.ts",
+            "polyfills": "projects/cc/src/polyfills.ts",
+            "tsConfig": "projects/cc/tsconfig.spec.json",
+            "karmaConfig": "projects/cc/karma.conf.js",
             "styles": [
-              "projects/chat/src/styles.scss"
+              "projects/cc/src/styles.scss"
             ],
             "scripts": [],
             "assets": [
-              "projects/chat/src/favicon.ico",
-              "projects/chat/src/assets"
+              "projects/cc/src/favicon.ico",
+              "projects/cc/src/assets"
             ]
           }
         },
@@ -85,36 +86,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/chat/tsconfig.app.json",
-              "projects/chat/tsconfig.spec.json"
+              "projects/cc/tsconfig.app.json",
+              "projects/cc/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "chat-e2e": {
-      "root": "projects/chat-e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/chat-e2e/protractor.conf.js",
-            "devServerTarget": "chat:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "chat:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/chat-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]
@@ -123,5 +97,5 @@
       }
     }
   },
-  "defaultProject": "chat"
+  "defaultProject": "cc"
 }

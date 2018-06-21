@@ -1,9 +1,12 @@
 <main class="main">
 	<cc-nav></cc-nav>
 	<div class="main-content">
-		<cc-header></cc-header>
+		<cc-header class="not-responsive"></cc-header>
 		<div class="container">
-			<div class="grid">
+			<div class="content-loading  not-responsive" *ngIf="!(ready$ | async)">
+				<div></div>
+			</div>
+			<div class="grid not-responsive" *ngIf="ready$ | async">
 				<div class="grid-md8">
 					<cc-client></cc-client>
 					<cc-lock></cc-lock>
@@ -15,6 +18,9 @@
 					<cc-history></cc-history>
 				</div>
 			</div>
+			<section class="responsive callout palette-error">
+				cc n'est pas responsive :'(
+			</section>
 		</div>
 	</div>
 </main>

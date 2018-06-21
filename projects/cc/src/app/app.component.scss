@@ -1,0 +1,19 @@
+@import "~@lucca-front/scss/src/theming.overridable";
+@import "~@lucca-front/scss/src/mixins";
+
+:host {
+	@include media_smaller_than('md') {
+		.not-responsive { display: none }
+	}
+	@include media_larger_than('md') {
+		.responsive { display: none }
+	}
+	.content-loading{
+		text-align: center;
+		> div {
+			height: 400px;
+			width: 200px;
+			@include loading(200px);
+		}
+	}
+}

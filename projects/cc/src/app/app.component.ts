@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	ready$ = timer(2000)
+	ready$ = timer(100)
 	.pipe(map(i => !(i % 2)));
 
 }

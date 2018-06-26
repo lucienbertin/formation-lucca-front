@@ -3,13 +3,22 @@
 		<h3>Historique</h3>
 		<ul>
 			<li>
-				{{ basile | luUserDisplay: format }} s'est connecte en tant que passepartout
+				<span [luPopoverTriggerFor]="log1">{{ basile | luUserDisplay: format }}</span> s'est connecte en tant que passepartout
+				<lu-popover #log1="LuPopover" trigger-on="hover">
+					<lu-user-tile [user]="basile"></lu-user-tile>
+				</lu-popover>
 			</li>
 			<li>
-				{{ basile | luUserDisplay: format }} s'est connecte en tant que maurice barthelemy
+				<span [luPopoverTriggerFor]="log2">{{ basile | luUserDisplay: format }}</span> s'est connecte en tant que maurice barthelemy
+				<lu-popover #log2="LuPopover" trigger-on="hover">
+					<lu-user-tile [user]="basile"></lu-user-tile>
+				</lu-popover>
 			</li>
 			<li>
-				{{ hugo | luUserDisplay: format }} s'est connecte en tant que pascal vincent
+				<span [luPopoverTriggerFor]="log3">{{ hugo | luUserDisplay: format }}</span> s'est connecte en tant que pascal vincent
+				<lu-popover #log3="LuPopover" trigger-on="hover">
+					<lu-user-tile [user]="hugo"></lu-user-tile>
+				</lu-popover>
 			</li>
 		</ul>
 	</div>

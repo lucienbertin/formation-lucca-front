@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { LockComponent } from './lock.component';
 import { CommonModule } from '@angular/common';
-import { LuUserDisplayModule } from '@lucca-front/ng';
+import { LuUserDisplayModule, LuPopoverModule, LuUserTileModule } from '@lucca-front/ng';
 
 @NgModule({
 	declarations: [
@@ -11,6 +11,8 @@ import { LuUserDisplayModule } from '@lucca-front/ng';
 	imports: [
 		CommonModule,
 		LuUserDisplayModule,
+		LuPopoverModule,
+		LuUserTileModule,
 	],
 	providers: [],
 	exports: [

@@ -9,4 +9,5 @@ import { basile, hugo } from '../user';
 export class HistoryComponent {
 	basile = basile;
 	hugo = hugo;
+	format = 'fl';
 }

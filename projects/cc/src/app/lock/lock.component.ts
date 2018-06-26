@@ -8,4 +8,5 @@ import { basile } from '../user/index';
 })
 export class LockComponent {
 	basile = basile;
+	format = 'fl';
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { DetailComponent } from './detail.component';
 import { CommonModule } from '@angular/common';
+import { LuUserTileModule } from '@lucca-front/ng';
 
 @NgModule({
 	declarations: [
@@ -9,6 +10,7 @@ import { CommonModule } from '@angular/common';
 	],
 	imports: [
 		CommonModule,
+		LuUserTileModule
 	],
 	providers: [],
 	exports: [

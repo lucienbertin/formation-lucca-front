@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { basile } from '../user/index';
 
 @Component({
 	selector: 'cc-lock',
@@ -6,4 +7,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./lock.component.scss']
 })
 export class LockComponent {
+	basile = basile;
 }

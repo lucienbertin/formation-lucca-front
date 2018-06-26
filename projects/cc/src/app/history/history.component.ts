@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { basile, hugo } from '../user';
 
 @Component({
 	selector: 'cc-history',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
 	styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent {
+	basile = basile;
+	hugo = hugo;
 }

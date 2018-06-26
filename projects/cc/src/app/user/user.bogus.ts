@@ -4,12 +4,18 @@ export const basile = {
 	firstName: 'Basile',
 	lastName: 'Minvielle',
 	jobTitle: 'customer success guru',
+	picture: {
+		href: 'https://www.lucca.fr/img/equipe/bminvielle.jpg',
+	}
 } as IUser;
 export const marie = {
 	id: 509,
 	firstName: 'Marie',
 	lastName: 'Lambert',
 	jobTitle: 'bizdev wow gal',
+	picture: {
+		href: 'https://www.lucca.fr/img/equipe/mlambert.jpg',
+	}
 } as IUser;
 export const hugo = {
 	id: 493,

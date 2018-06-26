@@ -179,6 +179,12 @@
   version "1.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@lucca-front/icons/-/icons-1.0.0-rc.0.tgz#fb1b8aed87a1501b986ef0b5beeedc1b4d5c3469"
 
+"@lucca-front/ng@1.0.0-rc.0":
+  version "1.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@lucca-front/ng/-/ng-1.0.0-rc.0.tgz#4d7cd4db87fd066449c1698e58e2f41b71014cbb"
+  dependencies:
+    tslib "^1.9.0"
+
 "@lucca-front/scss@1.0.0-rc.0":
   version "1.0.0-rc.0"
   resolved "https://registry.yarnpkg.com/@lucca-front/scss/-/scss-1.0.0-rc.0.tgz#416eb84a74164c44d19c83245fa9d1e556be73ba"

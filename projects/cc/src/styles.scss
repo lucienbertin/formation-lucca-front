@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@lucca-front/scss/src/main.overridable";
+@import "~@lucca-front/ng/style/main.overridable";
 :root {
 	@include generateCSSVarsFromTheme($theme);
 }

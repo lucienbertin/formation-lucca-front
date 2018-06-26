@@ -1,24 +1,21 @@
 # Exercice
 
-la va falloir utiliser 
+la va falloir utiliser material et formly et ce qu'offre les entryu points `/mterial` et `/formly`
 
-## afficher les utilisateurs convenablement
+## Ouvrir une modale de creation de client
 
-tous les utilisateurs sont centralises dans ce bout de [code](https://github.com/lucienbertin/formation-lucca-front/blob/td.4/projects/cc/src/app/user/user.bogus.ts)
+j'ai rajoute le module `create`, qui ppour l'instant n'a que le bouton de creation. ce qu'il faut c'est que
 
-ensuite ils sont affiches sous la forme de json dans
+ - au click ca ouvre un `dialog`
+ - avec dedans ujn formlulaire de creation de client
 
- - la section contact (/app/detail)
- - la section "environnement bloque" (/app/lock)
- - l'historique (/app/history)
+cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.5/moqup.png)
 
-l'idee c'est d'utiliser ce qui est dipo dan `@lucca-front/ng` pour afficher les utilisateurs, a savoir le `luUserDisplay` pipe et le composant `lu-user-tile`
+faut penser a recuperer l'ocverride de style qu'a fait sandy dans `@lucca-front/ng/material`
 
-cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.4/moqup.png)
+## utiliser formly pour le formulaire
 
-## utiliser le popover
-
-pour l'historique, afficher un popover au hover sur les noms d'utilisateurs une `lu-user-tile` avec le mec dedans
+et la brique `LuFormlyModule` qui est dans `@lucca-front/ng/formly`
 
 cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.4/moqup-hover.png)
 
@@ -27,3 +24,5 @@ cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.4
 les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
 la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
 la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.3/moqup.png)
+[formly](https://github.com/formly-js/ngx-formly)
+[ng-material](https://material.angular.io/)

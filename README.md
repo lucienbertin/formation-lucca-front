@@ -1,28 +1,44 @@
 # Exercice
 
-la va falloir utiliser material et formly et ce qu'offre les entryu points `/mterial` et `/formly`
+faire des extension de ce que propose lucca-front
 
-## Ouvrir une modale de creation de client
+## un select-feeder qui ping gmap
 
-j'ai rajoute le module `create`, qui ppour l'instant n'a que le bouton de creation. ce qu'il faut c'est que
+creer ce qu'il faut pour avoir un select qui ping l'api de gmap
 
- - au click ca ouvre un `dialog`
- - avec dedans ujn formlulaire de creation de client
+celle-ci https://maps.googleapis.com/maps/api/geocode/json?address=13-rue-martin-bernard
 
-cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.5/moqup.png)
+cf. [moqup](https://github.com/lucienbertin/formation-lucca-front/blob/td.6/moqup-select.png)
 
-faut penser a recuperer l'ocverride de style qu'a fait sandy dans `@lucca-front/ng/material`
+## le composant cc-user
 
-## utiliser formly pour le formulaire
+reprendre ce qui a ete fait en TD4, mais en faire un composant
 
-et la brique `LuFormlyModule` qui est dans `@lucca-front/ng/formly`
+la chose importante c'est qu'il faut remplacer ca
+```html
+<span [luPopoverTriggerFor]="popover">{{ xxx | luUserDisplay: format }}</span>
+<lu-popover #popover="LuPopover" trigger-on="hover">
+	<lu-user-tile [user]="xxx"></lu-user-tile>
+</lu-popover>
+```
+par ca
+```html
+<span [luPopoverTriggerFor]="popover">{{ xxx | luUserDisplay: format }}</span>
+<cc-user-popover #popover="CcUserPopover" [user]="xxx"></lu-popover>
+```
 
-cf la [maquette](https://github.com/lucienbertin/formation-lucca-front/blob/td.4/moqup-hover.png)
+## surcouche formly
+
+rajouter un champ de type address qui utilise ce qu'on a fait sur le select
 
 # resources
 
 les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
 la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
-la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.3/moqup.png)
+la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.6/moqup.png)
 [formly](https://github.com/formly-js/ngx-formly)
 [ng-material](https://material.angular.io/)
+
+la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common/src/lib/project/draft/components/select) d'un select feeder custom
+la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common-formly/src/lib) de la surcouche formly
+la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/apps/tproj/src/app/track/components/status-popover) de l'extension de popover

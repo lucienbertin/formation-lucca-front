@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { CreateDialogComponent } from './create-dialog.component';
 
 @Component({
 	selector: 'cc-create',
@@ -10,7 +12,8 @@ import { Component } from '@angular/core';
 	styleUrls: []
 })
 export class CreateButtonComponent {
+	constructor(private dialog: MatDialog) {}
 	openDialog() {
-		window.alert('lol');
+		CreateDialogComponent.openDialog(this.dialog);
 	}
 }

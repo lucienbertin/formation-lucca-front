@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormlyModule } from '@ngx-formly/core';
 
 import { AppComponent } from './app.component';
 import { ActionModule } from './action/action.module';
@@ -27,6 +28,7 @@ import { HeaderModule } from './header/header.module';
 		LockModule,
 		NavModule,
 		HeaderModule,
+		FormlyModule.forRoot(),
 	],
 	bootstrap: [
 		AppComponent,

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 import { CreateButtonComponent } from './create-button.component';
 import { CreateFormComponent } from './create-form.component';
@@ -21,6 +21,8 @@ import { FormlyModule } from '@ngx-formly/core';
 		FormlyModule,
 		FormsModule,
 		ReactiveFormsModule,
+		MatDatepickerModule,
+		MatNativeDateModule,
 	],
 	providers: [],
 	exports: [

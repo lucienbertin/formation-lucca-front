@@ -39,72 +39,34 @@ export class CreateFormComponent {
 				mod: 'mod-framed',
 			},
 		},
-		// {
-		// 	key: 'age',
-		// 	type: 'input',
-		// 	templateOptions: {
-		// 		type: 'number',
-		// 		label: 'age - number',
-		// 	},
-		// },
-		// {
-		// 	key: 'birthDate',
-		// 	type: 'date',
-		// 	templateOptions: {
-		// 		label: 'birthDate - date',
-		// 	},
-		// },
-		// {
-		// 	key: 'description',
-		// 	type: 'textarea',
-		// 	templateOptions: {
-		// 		label: 'description - textarea',
-		// 		placeholder: 'enter your life journey',
-		// 	},
-		// },
-		// {
-		// 	key: 'gender',
-		// 	type: 'autocomplete',
-		// 	templateOptions: {
-		// 		label: 'gender - autocomplete',
-		// 		placeholder: 'choose well',
-		// 		options: [
-		// 			{ id: 0, name: 'female' },
-		// 			{ id: 1, name: 'male' },
-		// 			{ id: 2, name: 'other' },
-		// 		],
-		// 	},
-		// },
-		// {
-		// 	key: 'orientation',
-		// 	type: 'select',
-		// 	templateOptions: {
-		// 		label: 'sexual orientation - select',
-		// 		placeholder: 'choose well',
-		// 		options: [
-		// 			{ id: 0, name: 'female' },
-		// 			{ id: 1, name: 'male' },
-		// 			{ id: 2, name: 'other' },
-		// 		],
-		// 	},
-		// },
-		// {
-		// 	key: 'manager',
-		// 	type: 'user',
-		// 	templateOptions: {
-		// 		label: 'manager - user',
-		// 		placeholder: 'pings /api/v3/users/find',
-		// 	},
-		// },
-		// // {
-		// // 	key: 'department',
-		// // 	type: 'api',
-		// // 	templateOptions: {
-		// // 		label: 'department - api',
-		// // 		placeholder: 'pings /api/v3/departments',
-		// // 		api: '/api/v3/departments',
-		// // 	},
-		// // },
+		{
+			key: 'startDate',
+			type: 'date',
+			templateOptions: {
+				label: 'Date de debut',
+				mod: 'mod-framed',
+			},
+		},
+		{
+			key: 'notabene',
+			type: 'textarea',
+			templateOptions: {
+				label: 'remaqrwues en tout genre',
+				mod: 'mod-framed',
+			},
+		},
+		{
+			key: 'type',
+			type: 'select',
+			templateOptions: {
+				label: 'type de contrat',
+				options: [
+					{ id: 0, name: 'direct' },
+					{ id: 1, name: 'indirect' },
+				],
+				mod: 'mod-framed',
+			},
+		},
 	];
 	submit(client) {
 		this.clientSubmitted.emit(client);

@@ -25,6 +25,7 @@
     "@lucca-front/icons": "1.0.0-rc.0",
     "@lucca-front/scss": "1.0.0-rc.0",
     "@lucca-front/ng": "1.0.0-rc.0",
+    "@ngx-formly/core": "^4.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.0.0",

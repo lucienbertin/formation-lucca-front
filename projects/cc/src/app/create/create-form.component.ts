@@ -10,34 +10,35 @@ export class CreateFormComponent {
 	form: FormGroup = new FormGroup({});
 	client = {};
 	@Output() clientSubmitted = new EventEmitter();
-	submit(client) {
-		this.clientSubmitted.emit(client);
-	}
+
 	fields = [
 		{
 			key: 'name',
 			type: 'input',
 			templateOptions: {
 				type: 'text',
-				label: 'name - text',
+				label: 'nom',
+				mod: 'mod-framed',
 			},
 		},
-		// {
-		// 	key: 'email',
-		// 	type: 'input',
-		// 	templateOptions: {
-		// 		type: 'email',
-		// 		label: 'email - email',
-		// 	},
-		// },
-		// {
-		// 	key: 'password',
-		// 	type: 'input',
-		// 	templateOptions: {
-		// 		type: 'password',
-		// 		label: 'password - password',
-		// 	},
-		// },
+		{
+			key: 'email',
+			type: 'input',
+			templateOptions: {
+				type: 'email',
+				label: 'contact',
+				mod: 'mod-framed',
+			},
+		},
+		{
+			key: 'password',
+			type: 'input',
+			templateOptions: {
+				type: 'password',
+				label: 'password',
+				mod: 'mod-framed',
+			},
+		},
 		// {
 		// 	key: 'age',
 		// 	type: 'input',
@@ -105,4 +106,7 @@ export class CreateFormComponent {
 		// // 	},
 		// // },
 	];
+	submit(client) {
+		this.clientSubmitted.emit(client);
+	}
 }

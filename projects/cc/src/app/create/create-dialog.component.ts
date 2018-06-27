@@ -6,7 +6,7 @@ import { MatDialog, MatDialogRef } from '@angular/material';
 })
 export class CreateDialogComponent {
 	static openDialog(dialog: MatDialog): MatDialogRef<CreateDialogComponent> {
-		return dialog.open(CreateDialogComponent);
+		return dialog.open(CreateDialogComponent, { panelClass: 'sm' });
 	}
 	constructor(
 		private dialogRef: MatDialogRef<CreateDialogComponent>,

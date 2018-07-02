@@ -15,7 +15,7 @@ export class AddressFeederComponent implements IApiSelectFeeder<any> {
 		return this.searchService.searchAddresses(clue);
 	}
 	textValue(item: any) {
-		return item.formatted_address;
+		return `${item.formatted_address}`;
 	}
 	isPaged() { return false; }
 }

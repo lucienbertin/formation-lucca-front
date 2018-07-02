@@ -4,10 +4,8 @@
 		Environnement bloqué
 	</h2>
 	<p>
-		par <span [luPopoverTriggerFor]="popover">{{ basile | luUserDisplay: format }}</span> le 12 juin
-		<lu-popover #popover="LuPopover" trigger-on="hover">
-			<lu-user-tile [user]="basile"></lu-user-tile>
-		</lu-popover>
+		par <cc-user [user]="basile"></cc-user> le 12 juin
+
 	</p>
 	<q>J'essaie de recuperer le 06 de Jean Paul Rouve, c'est mon idole</q>
 </section>

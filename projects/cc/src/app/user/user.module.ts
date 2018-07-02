@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 
-import { HistoryComponent } from './history.component';
-import { CommonModule } from '@angular/common';
 import { LuUserDisplayModule, LuPopoverModule, LuUserTileModule } from '@lucca-front/ng';
-import { UserModule } from '../user/user.module';
+import { UserComponent } from './user.component';
+import { UserPopoverComponent } from './user-popover.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
 	declarations: [
-		HistoryComponent
+		UserComponent,
+		UserPopoverComponent,
 	],
 	imports: [
-		CommonModule,
 		LuUserDisplayModule,
 		LuPopoverModule,
 		LuUserTileModule,
-		UserModule,
+		CommonModule,
 	],
 	providers: [],
 	exports: [
-		HistoryComponent,
+		UserComponent,
 	]
 })
-export class HistoryModule { }
+export class UserModule { }

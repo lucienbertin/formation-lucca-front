@@ -8,5 +8,12 @@
 			<span class="label">timmi</span>
 			<span class="label">1-10 utilisateurs</span>
 		</p>
+		<div>
+			<div class="textfield mod-longest">
+				<lu-api-select class="textfield-input" [selectApiFeeder]="addressFeeder">
+					<cc-address-feeder #addressFeeder="ccAddressFeeder"></cc-address-feeder>
+				</lu-api-select>
+			</div>
+		</div>
 	</div>
 </section>

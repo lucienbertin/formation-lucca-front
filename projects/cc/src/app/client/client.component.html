@@ -10,9 +10,10 @@
 		</p>
 		<div>
 			<div class="textfield mod-longest">
-				<lu-api-select class="textfield-input" [selectApiFeeder]="addressFeeder">
+				<lu-api-select class="textfield-input" [selectApiFeeder]="addressFeeder" [(ngModel)]="address">
 					<cc-address-feeder #addressFeeder="ccAddressFeeder"></cc-address-feeder>
 				</lu-api-select>
+				{{ address | json }}
 			</div>
 		</div>
 	</div>

@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./client.component.scss']
 })
 export class ClientComponent {
+	address = undefined;
 }

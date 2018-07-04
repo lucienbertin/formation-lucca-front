@@ -18,4 +18,6 @@ export class AddressFeederComponent implements IApiSelectFeeder<any> {
 		return `${item.formatted_address}`;
 	}
 	isPaged() { return false; }
+	length() { return undefined; }
+	getAllEntities() { return undefined; }
 }

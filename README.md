@@ -65,7 +65,7 @@ faut donc rajouter le bon include path dans le angular.json (cf slides)
 
 ensuite vous allez vouloir definire vos override, faut toutes les mettre dans un dossier, rajouter le path de ce dossier en premier dans les include paths et creez votre fichieer `_palettes.override.scss` dans ce dossier.
 
-ensuite faite un fichier `_components.override.scss` pour pouvoir overrider la nav en particulier
+ensuite faite un fichier `_components.override.scss` pour pouvoir overrider la nav en particulier, le mieux pour overrider un composant c'est d'aller voir la orme de son theme dans le code source qui est [ici](https://github.com/LuccaSA/lucca-front/tree/master/packages/scss/src/theming/components)
 
 ## style encapsule
 

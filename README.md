@@ -88,7 +88,7 @@ dans le composant qui veut l'utiliser
 ```ts
 @Component({
 	template: `<lu-api-select [selectApiFeeder]="feeder">
-		<address-feeder #addressFeeder="addressFeeder"></address-feeder>
+		<address-feeder #feeder="addressFeeder"></address-feeder>
 	</lu-api-select>`
 })
 export class MyCompomnent {

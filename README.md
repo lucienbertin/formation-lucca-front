@@ -44,6 +44,54 @@ rajouter un champ de type address qui utilise ce qu'on a fait sur le select
 
 # marche a suivre
 
+## select qui ping gmap
+
 l'idee c'est de creer un select feeder.
 
-un select feeder c;est un composant (ou service) qu'on passe a un `lu-select`
+> un select feeder c'est un composant (ou service) qu'on passe a un `lu-api-select` et qui va lui unjecter des options quand on tape dans le champ de recherche
+
+pour ca faut juste implementer l'interfavce `IApiSelectFeeder` [code](https://github.com/LuccaSA/lucca-front/blob/master/packages/ng/libraries/core/src/lib/api/select/feeder/api-feeder.model.ts)
+
+> il est possible de le faire soit sous la forme d'un `@Injectable` soit sous forme d'un `@Component`, le tout est de fournir le feeder au lu-api-select
+
+### injectable
+
+dans le fichier address.feeder.ts
+```ts
+@Injectable()
+export class AddressFeederService implements IApiSelectFeeder<any> {
+	// implementer l'interface
+}
+```
+dans le composant qui veut l'utiliser
+```ts
+@Component({
+	template: `<lu-api-select [selectApiFeeder]="feeder"></lu-api-select>`
+})
+export class MyCompomnent {
+	constructor (public feeder: AddressFeederService) {}
+}
+```
+
+### Component
+dans le fichier address.feeder.ts
+```ts
+@Component({
+	selector: 'address-feeder',
+	exportAs: 'addressFeeder',
+})
+export class AddressFeederService implements IApiSelectFeeder<any> {
+	// implementer l'interface
+}
+```
+dans le composant qui veut l'utiliser
+```ts
+@Component({
+	template: `<lu-api-select [selectApiFeeder]="feeder">
+		<address-feeder #addressFeeder="addressFeeder"></address-feeder>
+	</lu-api-select>`
+})
+export class MyCompomnent {
+	constructor ()
+}
+```

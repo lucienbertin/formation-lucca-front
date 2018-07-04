@@ -33,12 +33,17 @@ rajouter un champ de type address qui utilise ce qu'on a fait sur le select
 
 # resources
 
-les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
-la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
-la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.6/moqup.png)
-[formly](https://github.com/formly-js/ngx-formly)
-[ng-material](https://material.angular.io/)
+- les slides sont [ici](https://docs.google.com/presentation/d/1HT1uh4trkkjgoT-IagpyhO-0yy57h1YqLKUTC7p5FiM/edit?usp=sharing)
+- la demo est [ici](https://latest-lucca-front-luccasa.surge.sh/)
+- la maquette est [ici](https://github.com/lucienbertin/formation-lucca-front/blob/td.6/moqup.png)
+- [formly](https://github.com/formly-js/ngx-formly)
+- [ng-material](https://material.angular.io/)
+- la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common/src/lib/project/draft/components/select) d'un select feeder custom
+- la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common-formly/src/lib) de la surcouche formly
+- la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/apps/tproj/src/app/track/components/status-popover) de l'extension de popover
 
-la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common/src/lib/project/draft/components/select) d'un select feeder custom
-la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/libraries/common-formly/src/lib) de la surcouche formly
-la version de [tproj](https://github.com/LuccaSA/ilucca/tree/rc/static/timmi/packages/project/apps/tproj/src/app/track/components/status-popover) de l'extension de popover
+# marche a suivre
+
+l'idee c'est de creer un select feeder.
+
+un select feeder c;est un composant (ou service) qu'on passe a un `lu-select`

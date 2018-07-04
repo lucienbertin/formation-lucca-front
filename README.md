@@ -80,7 +80,7 @@ dans le fichier address.feeder.ts
 	selector: 'address-feeder',
 	exportAs: 'addressFeeder',
 })
-export class AddressFeederService implements IApiSelectFeeder<any> {
+export class AddressFeederComponent implements IApiSelectFeeder<any> {
 	// implementer l'interface
 }
 ```

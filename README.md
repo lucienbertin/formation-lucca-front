@@ -1,6 +1,6 @@
 # Exercice
 
-la va falloir utiliser 
+la va falloir utiliser la lib comme une lib tierce standard
 
 ## afficher les utilisateurs convenablement
 
